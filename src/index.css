@@ -1,0 +1,24 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+}
+@font-face {
+  font-family: "CircularBold";
+  src: local("CircularBold"),url("./fonts/Circular/CircularStd-Bold.otf") format("truetype");
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  font-family: "CircularBold";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

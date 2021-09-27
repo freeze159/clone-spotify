@@ -1,0 +1,41 @@
+.landing__info{
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://content-tooling.spotifycdn.com/images/b236bf87-bfd5-4bcb-b51a-77881073039c_lie_circles.svg);
+    background-position: right center;
+    min-height: 600px;
+    background-color: rgb(41, 65, 171);
+    padding: 50px;
+    color: #1DB954;
+}
+
+.landing__info__content {
+    text-align: left;
+    margin-bottom: 25px;
+
+}
+.landing__info__content h4,h2,h1{
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+.landing__info__content h1{
+    font-size: 60px;
+}
+.landing__info__content h2{
+    font-size: 28px;
+    font-weight: 400;
+}
+.landing__info__content__subscribe{
+    background-color: #1DB954;;
+    padding: 15px 5px;
+    width: 250px;
+    border-radius: 99px;
+    text-align: center;
+    color: rgb(41, 65, 171);
+    cursor: pointer;
+}
+.landing__info__content__subscribe:hover{
+    transform: scale(105%);
+    background-color: #42da77;;
+
+}
