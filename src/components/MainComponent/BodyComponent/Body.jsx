@@ -20,7 +20,7 @@ function Body() {
                 <Route path='/playlist/:playlistId'>
                     <SongContainer songListInfo={playlist} />
                 </Route>
-                <Route path='/' exact>
+                <Route path='/'>
                     <SongContainer songListInfo={discover_weekly} />
                 </Route>
                 
