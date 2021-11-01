@@ -10,42 +10,36 @@ function FooterLanding() {
         <section className={styles.landing__footer}>
             <div className={styles.landing__footer__topcontent}>
                 <img className={styles.landing__footer__topcontent__logo}
-
                     src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
-                    alt=""
+                    alt="Logo"
                 />
                 <div className={styles.landing__footer__topcontent__link}>
                     <div>
                         <p>COMPANY</p>
-                        <a>About</a>
-                        <a>Jobs</a>
-                        <a>For the Record</a>
+                        <a href="#">About</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">For the Record</a>
                     </div>
                     <div>
                         <p>COMMUNITIES</p>
-                        <a>For Artists</a>
-                        <a>Developers</a>
-                        <a>Advertising</a>
-                        <a>Investors</a>
-                        <a>Vendors</a>
+                        <a href="#">For Artists</a>
+                        <a href="#">Developers</a>
+                        <a href="#">Advertising</a>
+                        <a href="#">Investors</a>
+                        <a href="#">Vendors</a>
 
                     </div>
                     <div>
                         <p>USEFUL LINKS</p>
-                        <a>Support</a>
-                        <a>Web Player</a>
-                        <a>Free Mobile App</a>
+                        <a href="#">Support</a>
+                        <a href="#">Web Player</a>
+                        <a href="#">Free Mobile App</a>
                     </div>
                 </div>
                 <div className={styles.landing__footer__topcontent__media}>
                     <div><FontAwesomeIcon icon={["fab", "facebook"]} /></div>
                     <div><FontAwesomeIcon icon={["fab", "instagram"]} /></div>
                     <div><FontAwesomeIcon icon={["fab", "twitter"]} /></div>
-
-
-
-
-
                 </div>
             </div>
             <div className={styles.landing__footer__botcontent}>

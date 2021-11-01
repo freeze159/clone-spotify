@@ -3,10 +3,11 @@
     position: fixed;
     bottom:0;
     justify-content: space-between;
-    height: 65px;
-    width: 97%;
+    height: 45px;
+    width: 98%;
     background-color: #282828;
     padding: 20px;
+    z-index: 5;
 }
 .footer__left{
     flex:0.3;
@@ -15,8 +16,7 @@
     color: white;
     max-width: 300px;
     min-width: 250px;
-    overflow:hidden;
-    text-overflow: ellipsis;
+    
     
 }
 .footer__songImage{
@@ -27,6 +27,9 @@
 }
 .footer__songInfo > h4{
     margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .footer__songInfo > p {
     font-size: 12px;

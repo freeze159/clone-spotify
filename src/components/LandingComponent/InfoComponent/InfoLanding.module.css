@@ -14,7 +14,7 @@
     margin-bottom: 25px;
 
 }
-.landing__info__content h4,h2,h1{
+.landing__info__content h4,.landing__info__content h2,.landing__info__content h1{
     padding-top: 10px;
     margin-bottom: 30px;
 }

@@ -1,8 +1,9 @@
 import React from 'react'
-
 import styles from './LandingHeader.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { accessUrl} from '@services/spotify'
+
 function LandingHeader() {
     let openMenu = () => {
         let navbar = document.getElementById('myTopnav')
@@ -18,7 +19,7 @@ function LandingHeader() {
             <img className={styles.landing__header__logo}
 
                 src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
-                alt=""
+                alt="Logo"
             />
 
             <nav className={styles.landing__header__nav} >
@@ -29,12 +30,12 @@ function LandingHeader() {
                         <li><a href="">Download</a></li>
                         <li>|</li>
                         <li><a href="">Sign up</a></li>
-                        <li><a href="">Log in</a></li>
+                        <li><a href={accessUrl}>Log in</a></li>
                         <a className={styles.landing__header__icon} onClick={() => openMenu()}>
-                        <FontAwesomeIcon icon={faBars} />
-                    </a>
+                            <FontAwesomeIcon icon={faBars} />
+                        </a>
                     </ul>
-                    
+
                 </div>
 
                 <div className={styles['landing__header__nav--responsive']} id='myTopnav'>
@@ -48,7 +49,7 @@ function LandingHeader() {
                         <li><a href="">Download</a></li>
                         <li> - </li>
                         <li><a href="">Sign up</a></li>
-                        <li><a href="">Log in</a></li>
+                        <li><a href={accessUrl}>Log in</a></li>
 
                     </ul>
                 </div>

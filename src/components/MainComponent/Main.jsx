@@ -1,6 +1,7 @@
 import React from 'react'
 import Sidebar from './SidebarComponent/Sidebar'
-import Body from './BodyComponent/Body'
+import Body from '@BodyCom/Body'
+
 import Footer from './FooterComponent/Footer'
 import styles from './Main.module.css'
 function Main() {
