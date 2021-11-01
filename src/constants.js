@@ -18,4 +18,5 @@ export const SCOPE = [
 export const NO_PLAYING = "No song is playing"
 export const CLIENT_ID = "38f371b382974633a699ed26951ac3a1";
 export const REDIRECT_URI = "http://localhost:3000/";
+export const REDIRECT_URI_PROD = "https://freeze159.github.io/clone-spotify/";
 export const LOGO_URL = "https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"

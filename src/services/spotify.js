@@ -1,4 +1,4 @@
-import {SCOPE,CLIENT_ID,REDIRECT_URI} from '../constants'
+import { SCOPE, CLIENT_ID, REDIRECT_URI,REDIRECT_URI_PROD } from '../constants'
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 // Replace with your app's client ID, redirect URI and desired scopes
 
@@ -11,7 +11,13 @@ export const authEndpoint = "https://accounts.spotify.com/authorize";
     token_type: "Bearer"
  * }
  */
-
+let redirect_url = ''
+if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+  redirect_url = REDIRECT_URI
+  
+} else {
+  redirect_url = REDIRECT_URI_PROD
+}
 export const getTokenFromResponse = () => {
   return window.location.hash
     // remove hash sign
@@ -31,6 +37,6 @@ export const getTokenFromResponse = () => {
     }, {});
 };
 
-export const accessUrl = `${authEndpoint}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${SCOPE.join(
+export const accessUrl = `${authEndpoint}?client_id=${CLIENT_ID}&redirect_uri=${redirect_url}&scope=${SCOPE.join(
   "%20"
 )}&response_type=token&show_dialog=true`;
