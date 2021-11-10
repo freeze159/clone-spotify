@@ -4,10 +4,26 @@ import styles from './SearchResult.module.scss'
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
 import Songrow from '@BodyCom/SongrowComponent/Songrow'
 import PropTypes from 'prop-types';
-
+import { songAction } from '@store/song-slice'
+import { useDispatch } from 'react-redux';
+import { playSong, getPlayerState, seekToPosition } from '@services/api'
 function SearchResult({ searchRes }) {
+
     const renderSearchSongRow = (searchRes) => {
         return searchRes?.tracks.items.slice(0, 4).map((item, index) => <Songrow track={item} key={index} className={styles.search__songRow} />)
+    }
+
+    const dispatch = useDispatch()
+
+    const playSongItem = async (uri) => {
+        playSong(uri).then(s => {
+            seekToPosition(0)
+            getPlayerState().then(curr => {
+                dispatch(songAction.setPlaying())
+                dispatch(songAction.setItemPlaying(curr.data.item))
+            })
+
+        })
     }
     return (
         <div className={styles.search}>
@@ -22,8 +38,8 @@ function SearchResult({ searchRes }) {
                             <span>{searchRes?.tracks?.items[0]?.artists?.map(artist => artist.name).join(", ")}</span>
                             <span>Song</span>
                         </p>
-                        <div className={styles.overlay}>
-                            <PlayCircleFilledIcon className={styles.overlay__icon} />
+                        <div className={styles.overlay} onClick={()=> {playSongItem(searchRes?.tracks?.items[0]?.uri)}}>
+                            <PlayCircleFilledIcon className={styles.overlay__icon}/>
                         </div>
                     </div>
                 </div>

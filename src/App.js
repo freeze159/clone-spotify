@@ -58,15 +58,7 @@ function App() {
         player.addListener('not_ready', ({ device_id }) => {
           console.log('Device ID has gone offline', device_id);
         });
-        player.addListener('player_state_changed', ({
-          position,
-          duration,
-          track_window: { current_track }
-        }) => {
-          console.log('Currently Playing', current_track);
-          console.log('Position in Song', position);
-          console.log('Duration of Song', duration);
-        });
+        
         player.connect();
       };
 
@@ -80,14 +72,10 @@ function App() {
 
 
   return (
-    // BEM STYLE
     <Fragment>
       {!token && <LandingMain />}
       {token && <Main />}
-
     </Fragment>
-
-
   );
 }
 

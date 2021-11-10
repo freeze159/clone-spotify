@@ -19,13 +19,14 @@
             white-space: nowrap;
         }
         > p {
-            font-size: 12px;
+            font-size: 15px;
             opacity: 0.5;
         }
 
         .albumItem__background__image{
-            height: 100%;
-            width: 100%;
+            height: 140px;
+            width: 140px;
+            margin-left: 10px;
             border-radius: 100%;
         }
     }
