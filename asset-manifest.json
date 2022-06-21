@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/clone-spotify/static/css/main.29449d98.chunk.css",
+    "main.css": "/clone-spotify/static/css/main.82460b32.chunk.css",
     "main.js": "/clone-spotify/static/js/main.63c5b2f5.chunk.js",
     "main.js.map": "/clone-spotify/static/js/main.63c5b2f5.chunk.js.map",
     "runtime-main.js": "/clone-spotify/static/js/runtime-main.e299f21c.js",
@@ -14,14 +14,14 @@
     "static/js/4.9c1c2789.chunk.js.map": "/clone-spotify/static/js/4.9c1c2789.chunk.js.map",
     "index.html": "/clone-spotify/index.html",
     "static/css/3.60f84571.chunk.css.map": "/clone-spotify/static/css/3.60f84571.chunk.css.map",
-    "static/css/main.29449d98.chunk.css.map": "/clone-spotify/static/css/main.29449d98.chunk.css.map",
+    "static/css/main.82460b32.chunk.css.map": "/clone-spotify/static/css/main.82460b32.chunk.css.map",
     "static/js/2.4f5bb8a8.chunk.js.LICENSE.txt": "/clone-spotify/static/js/2.4f5bb8a8.chunk.js.LICENSE.txt",
     "static/media/index.css": "/clone-spotify/static/media/CircularStd-Bold.5c4514a8.otf"
   },
   "entrypoints": [
     "static/js/runtime-main.e299f21c.js",
     "static/js/2.4f5bb8a8.chunk.js",
-    "static/css/main.29449d98.chunk.css",
+    "static/css/main.82460b32.chunk.css",
     "static/js/main.63c5b2f5.chunk.js"
   ]
 }
