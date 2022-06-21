@@ -10,8 +10,6 @@ module.exports = {
       '@BodyCom': path.resolve(__dirname, 'src/components/MainComponent/BodyComponent'),
       '@FooterCom': path.resolve(__dirname, 'src/components/MainComponent/FooterComponent'),
       '@SidebarCom': path.resolve(__dirname, 'src/components/MainComponent/SidebarComponent'),
-      
-
     }
   },
 };

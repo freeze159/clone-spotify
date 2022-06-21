@@ -11,6 +11,7 @@ function App() {
   const token = useSelector(state => state.user.token)
   const dispatch = useDispatch()
   const [player, setPlayer] = useState(undefined)
+
   useEffect(() => {
     const hash = getTokenFromResponse();
     window.location.hash = ''
@@ -73,7 +74,7 @@ function App() {
 
   return (
     <Fragment>
-      {!token && <LandingMain />}
+      {!token && <LandingMain />}()
       {token && <Main />}
     </Fragment>
   );

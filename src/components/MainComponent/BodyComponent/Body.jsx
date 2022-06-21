@@ -13,6 +13,7 @@ function Body() {
     return (
         <div className={styles.body}>
             <Header />
+            
             <Switch>
                 <Route path='/search/:searchKeyword'>
                     <SearchResult searchRes={searchRes} />
@@ -23,7 +24,6 @@ function Body() {
                 <Route path='/'>
                     <SongContainer songListInfo={discover_weekly} />
                 </Route>
-                
             </Switch>
 
         </div>
