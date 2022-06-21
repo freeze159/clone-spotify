@@ -74,7 +74,7 @@ function App() {
 
   return (
     <Fragment>
-      {!token && <LandingMain />}()
+      {!token && <LandingMain />}
       {token && <Main />}
     </Fragment>
   );

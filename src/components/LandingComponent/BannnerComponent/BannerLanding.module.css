@@ -4,6 +4,7 @@
     background-color: #b22c15;
     color: white;
     display: flex;
+    justify-content: space-between;
     
 }
 .landing__banner__content {
